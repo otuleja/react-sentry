@@ -15,7 +15,7 @@ Sentry.init({
   // We recommend adjusting this value in production
   tracesSampleRate: 1.0,
 });
-console.log("here");
+console.log("here", process.env.REACT_APP_DSN);
 ReactDOM.render(
   <React.StrictMode>
     <App />
